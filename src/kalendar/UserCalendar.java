@@ -28,11 +28,12 @@ public class UserCalendar {
 		// set month on calendar
 		gcDate.set(2, --month);
 
-		// format date  in type "MMMM yyyy"
+		// format date in type "MMMM yyyy"
 		System.out.println("\n\t" + sdf.format(gcDate.getTime()));
-																	
+
 		System.out.println("_________________________________");
-		System.out.println("Sun  Mon  Tue  Wed  Thu  Fri  Sat");//print days in week
+		System.out.println("Sun  Mon  Tue  Wed  Thu  Fri  Sat");// print days in
+																// week
 
 		// get number of days in selected month
 		int daysInMonth = gcDate.getActualMaximum(java.util.Calendar.DAY_OF_MONTH);
@@ -44,30 +45,29 @@ public class UserCalendar {
 		// get first day of month(Sunday 1, Monday 7)
 		int firstDayInMonth = firstOfCurrentMonth.getDayOfWeek().getValue();
 
-		//set date on correct day in week
+		// set date on correct day in week
 		for (int i = 0; i < firstDayInMonth; i++) {
 			System.out.printf("%-5s", " ");
 		}
 
 		int temp = firstDayInMonth;
-		
+
 		// print all days in selected month
 		for (int i = 1, j = 0 + firstDayInMonth + 1; i <= daysInMonth; i++, j++) {
-			
-			//in case first day in week is 7
-			if (temp % 7 ==0) {
+
+			// in case first day in week is 7
+			if (temp % 7 == 0) {
 				System.out.println();
 				temp++;
 			}
-			
+
 			System.out.printf("%-5d", i);// print one day in month per iteration
 
 			// print new line for each week
 			if (j % 7 == 0 && j != 0) {
 				System.out.println();
 			}
-			
-			
+
 		}
 		System.out.println("\n_________________________________");
 

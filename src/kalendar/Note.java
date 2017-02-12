@@ -2,14 +2,13 @@ package kalendar;
 
 //This is one note for reminder
 public class Note {
-	
+
 	private int day;
 	private int month;
 	private int year;
-	
+
 	private String message;
 
-	
 	public Note(int day, int month, int year, String message) {
 		super();
 		this.day = day;
@@ -34,14 +33,11 @@ public class Note {
 		return message;
 	}
 
-	//generate message for one reminder
+	// generate message for one reminder
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return day + "." + month+"." + year + "--->" + message ;
+		return day + "." + month + "." + year + "--->" + message;
 	}
-	
-	
-	
 
 }
