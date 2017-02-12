@@ -32,7 +32,7 @@ public class UserCalendar {
 		System.out.println("\n\t" + sdf.format(gcDate.getTime()));
 																	
 		System.out.println("_________________________________");
-		System.out.println("Sun  Mon  Tue  Wed  Thu  Fri  Sat");
+		System.out.println("Sun  Mon  Tue  Wed  Thu  Fri  Sat");//print days in week
 
 		// get number of days in selected month
 		int daysInMonth = gcDate.getActualMaximum(java.util.Calendar.DAY_OF_MONTH);
