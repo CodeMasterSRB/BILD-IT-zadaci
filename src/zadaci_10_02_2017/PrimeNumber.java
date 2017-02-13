@@ -12,6 +12,11 @@ public class PrimeNumber {
 
 	// is prime or not
 	private static boolean isPrime(int number) {
+		
+		if(number <= 1 ){
+			return false;
+		}
+		
 		int sqrt = (int) Math.sqrt(number) + 1;
 		for (int i = 2; i < sqrt; i++) {
 			if (number % i == 0) {

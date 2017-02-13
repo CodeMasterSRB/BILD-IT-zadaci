@@ -27,13 +27,12 @@ public class MaxValue {
 		// Testing
 
 		ArrayList<Integer> list = new ArrayList<>();
-
-		list.add(3);
-		list.add(1);
-		list.add(50);
-		list.add(23);
-		list.add(11);
-
+		
+		list.add(-1);
+		list.add(-2);
+		list.add(-3);
+		list.add(0);
+		
 		try {
 			System.out.println("Max value in ArrayList is " + max(list));
 		} catch (NullPointerException e) {
