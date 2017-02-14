@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Kalkulator {
 
+	//calculate
 	private static double calculate(String formula) throws Exception {
 
 		formula = formula.replaceAll(" ", "");
