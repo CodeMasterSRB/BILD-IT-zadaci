@@ -86,7 +86,7 @@ public class NameOfTheMonth {
 			year = input.nextInt();
 			input.nextLine();
 
-			System.out.print("Unesite mjesec: ");
+			System.out.print("Unesite mjesec[npr. Jan]: ");
 			month = input.nextLine();
 
 			// get results
