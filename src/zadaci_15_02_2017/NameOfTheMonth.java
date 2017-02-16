@@ -44,9 +44,11 @@ public class NameOfTheMonth {
 	}
 	
 	// method which return number of days in specific month
-	private static void getDaysInMonth(int month, int year) {
+	private static void getDaysInMonth(int month, int year) throws Exception {
 		
-		
+		if (month == 0) {
+			throw new Exception();
+		}
 
 		GregorianCalendar gc = new GregorianCalendar(year, month, 10);
 		
