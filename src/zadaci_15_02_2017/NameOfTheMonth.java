@@ -28,13 +28,13 @@ public class NameOfTheMonth {
         DateFormatSymbols dfs = new DateFormatSymbols();
         String[] months = dfs.getMonths();
         
-        for (int i = 0; i < 12; i++) {
+        for (int i = 0, j = 1; i < 12; i++,j++) {
         	
         	months[i] = months[i].substring(0, 3);
         	
         	//if months are equal return number of that month
 			if (months[i].equals(month.toLowerCase())) {	
-				return i;
+				return j;
 			}
 			
 		}
@@ -50,7 +50,7 @@ public class NameOfTheMonth {
 			throw new Exception();
 		}
 
-		GregorianCalendar gc = new GregorianCalendar(year, month, 10);
+		GregorianCalendar gc = new GregorianCalendar(year, month -1, 10);
 		
 		// format date in type Februar 2018
 		SimpleDateFormat sdf = new SimpleDateFormat("MMMM yyyy");
