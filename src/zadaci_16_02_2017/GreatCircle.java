@@ -20,7 +20,11 @@ import java.util.Scanner;
 public class GreatCircle {
 	
 	//method which count great circle
-	private static double countGreatCircle(double x1, double  y1, double x2, double y2){
+	private static double countGreatCircle(double x1, double  y1, double x2, double y2)throws Exception{
+		
+		if ((x1 < -90 || x1> 90) || (x2 < -90 || x2> 90) || (y1 < -180 || y1> 180) || (y2 < -180 || y2> 180) ) {
+			throw new Exception();
+		}
 		
 		//convert degrees to radians
 		x1 = Math.toRadians(x1);
