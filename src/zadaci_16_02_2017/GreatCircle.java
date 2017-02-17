@@ -27,7 +27,7 @@ public class GreatCircle {
 			throw new Exception();
 		}
 		
-		//convert degrees to radians
+		//convert degrees to radian
 		x1 = Math.toRadians(x1);
 		x2 = Math.toRadians(x2);
 		
