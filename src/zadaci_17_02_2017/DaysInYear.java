@@ -24,7 +24,7 @@ public class DaysInYear {
 		if (new GregorianCalendar().isLeapYear(year)) {
 			return 366;
 		} else {
-			return 355;
+			return 365;
 		}
 		
 	}
