@@ -10,7 +10,7 @@ import java.util.Scanner;
  * broj 6 2 puta, broj 23 jednom, itd.
  */
 
-public class RepetedNumbers {
+public class RepeatedNumbers {
 
 	// method which check how many numbers are repeated
 	private static void countRepeatedNumber(ArrayList<Integer> list) {

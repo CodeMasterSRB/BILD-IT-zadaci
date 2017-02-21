@@ -18,15 +18,17 @@ public class Dice {
 		
 	}
 	
-	public void playGame(){
+	public int playGame(){
 		
 		int rolledDices = rollDice();
 		
 		
 		if (rolledDices == 2 || rolledDices == 3 || rolledDices == 12) {
 			System.out.println("Craps, You lose!!!");
+			return -50;
 		}else if(rolledDices == 7 || rolledDices == 11 ){
 			System.out.println("Natural, You Win!!!");
+			return 50;
 		}else{
 			int tempRoll = rolledDices;
 			rolledDices = rollDice();
@@ -34,10 +36,11 @@ public class Dice {
 			while(true){
 			if (tempRoll == rolledDices) {
 				System.out.println("You Win!!!");
-				break;
+				return 50;
+				
 			}else if(rolledDices == 7) {
 				System.out.println("Dice is " + 7 + " You Lose!!!");
-				break;
+				return -50;
 			}
 			rolledDices = rollDice();
 			}

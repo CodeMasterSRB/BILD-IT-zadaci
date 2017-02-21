@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 
 
-public class ReveredNumber {
+public class ReversedNumber {
 	
 	//method which reverse one number
 	public static void reverse(int number){

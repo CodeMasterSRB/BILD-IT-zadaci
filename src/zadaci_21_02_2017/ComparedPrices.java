@@ -9,7 +9,7 @@ import java.util.Scanner;
  * te ispisuje koje pakovanje ima bolju cijenu.
  */
 
-public class CoparedPrices {
+public class ComparedPrices {
 
 
 	private static void compareTwoPrices(double weight1, double price1, double weight2, double price2) throws Exception {
