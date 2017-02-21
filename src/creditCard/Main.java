@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 	
+	//method which print standard menu for application
 	private static void printMenu(){
 		System.out.println("1.Check card\t2.Exit");
 	}
@@ -21,9 +22,11 @@ public class Main {
 		try {
 			printMenu();
 			System.out.print("Enter: ");
+			//chose between checking card and exiting from application
 			choice = input.nextInt();
 			
 			if (choice == 1) {
+				//check is card valid or invalid
 				System.out.print("\nEnter card number: ");
 				cardNumber = input.nextLong();
 				card.setCardNumber(cardNumber);
@@ -35,6 +38,7 @@ public class Main {
 				}
 				
 			}else if(choice == 2){
+				//terminate application
 				System.out.println("Bye");
 				break;
 			}else{
