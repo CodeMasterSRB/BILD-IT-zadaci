@@ -9,7 +9,7 @@ package zadaci_20_02_2017;
 public class Prime {
 
 	// is prime or not
-	private static boolean isPrime(int number) {
+	public static boolean isPrime(int number) {
 
 		if (number <= 1) {
 			return false;
