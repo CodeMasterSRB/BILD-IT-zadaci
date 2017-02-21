@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 	
+	//method which print standard menu for application
 	private static void printMenu(){
 		System.out.println("\n1.Play   2.Take money");
 	}
@@ -20,7 +21,7 @@ public class Main {
 		
 		System.out.print("\nInput money [Min 50]: ");
 		try{
-		deposit = input.nextInt();
+		deposit = input.nextInt();//input money for balance, minumum is 50
 		}catch (Exception e) {
 			System.out.println("Wrong input");
 		}
@@ -35,7 +36,7 @@ public class Main {
 			try {
 				
 				if (deposit >= 50) {
-				
+				//chose do player want to play another game or he will take his money
 				choice = input.nextInt();
 				
 				if(choice != 1 && choice != 2){
@@ -47,7 +48,7 @@ public class Main {
 					System.out.println("Bye");
 					break;
 				}
-				
+				//play game and print result
 				deposit +=dice.playGame();
 				System.out.println("\nDeposit: " + deposit);
 				}else{
