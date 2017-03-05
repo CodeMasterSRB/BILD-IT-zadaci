@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class PrimeNumber {
 
 	// is prime or not
-	private static boolean isPrime(int number) {
+	public static boolean isPrime(int number) {
 		
 		if(number <= 1 ){
 			return false;
