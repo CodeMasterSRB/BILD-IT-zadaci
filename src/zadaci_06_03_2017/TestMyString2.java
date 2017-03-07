@@ -19,6 +19,8 @@ public class TestMyString2 {
 			System.out.println(chars[i]);
 		}
 		
+		System.out.println(s);
+		
 		
 		newMyString = newMyString.toUpperCase();
 		System.out.println(newMyString.s);
