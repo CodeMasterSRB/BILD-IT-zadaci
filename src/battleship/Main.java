@@ -49,6 +49,7 @@ public class Main {
 							hit = true;
 							fields[row][column] = '*';
 							positions.remove(i);
+							System.out.println("\nEnemy ship destroyed\n");
 
 						}
 
@@ -88,7 +89,7 @@ public class Main {
 		System.out.println("HIT 2 SHIPS FROM 15 ATTEMPTS\n");
 		Scanner input = new Scanner(System.in);
 
-		int hitRow, hitColumn, shoots = 1;
+		int hitRow, hitColumn, shoots = 0;
 
 		setBattleShips();
 		fillUpFields();
@@ -98,9 +99,9 @@ public class Main {
 
 			try {
 				if (shoots == 15) {
-					System.out.println("PC WIN !!!");
+					System.out.println("\nPC WIN !!!");
 
-					System.out.println("Ramain ships positions: ");
+					System.out.println("\nRamain ships positions: ");
 
 					for (int i = 0; i < positions.size(); i++) {
 						System.out.println("Ship " + (i + 1) + ". " + positions.get(i).getRowPosition() + " : "
@@ -109,7 +110,7 @@ public class Main {
 
 					break;
 				} else if (positions.isEmpty()) {
-					System.out.println("YOU WIN !!!");
+					System.out.println("\nYOU WIN !!!");
 					break;
 				}
 				System.out.println("\nTrys " + shoots + " - 15");
@@ -120,6 +121,7 @@ public class Main {
 				System.out.print("Enter column: ");
 				hitColumn = input.nextInt();
 
+				System.out.println();
 				printBattlefields(hitRow, hitColumn);
 				shoots++;
 
