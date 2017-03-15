@@ -5,7 +5,19 @@ public class FacultyMember {
 	private final String firstName;
 	private final String lastName;
 	public enum Rank{
-		ASSISTENT, ASSOCIATE, FULL
+		ASSISTENT , ASSOCIATE, FULL;
+		
+		public static Rank equal(String position){
+			
+			if (position.equals("assistant")) {
+				return Rank.ASSISTENT;
+			}else if(position.equals("full")){
+				return Rank.FULL;
+			}else{
+				return Rank.ASSOCIATE;
+			}
+			
+		}
 	}
 	private final double salary;
 	private final Rank rank;
