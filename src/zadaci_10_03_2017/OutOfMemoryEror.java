@@ -12,6 +12,7 @@ public class OutOfMemoryEror {
 	public static void main(String[] a) {
 		try {
 			int[] i = new int[SIZE];
+			System.out.println(i);
 		} catch (OutOfMemoryError e) {
 			System.out.println("Eror");
 		}
